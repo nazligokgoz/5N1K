@@ -1,0 +1,313 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-top: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000;
+    background-color: #f2f2f2; /* Arka plan rengi */
+    padding: 10px 15px; /* İç boşluk */
+    border-radius: 5px; /* Köşe yuvarlaklığı */
+    transition: background-color 0.3s; 
+  }
+  
+  /* Ekstra: Logo ve menü öğelerine stil vermek */
+  .logo {
+    font-weight: bold;
+    color: orange;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .menu a:hover {
+    background-color:orange;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #000;
+    background-color: #f2f2f2; /* Arka plan rengi */
+    padding: 10px 15px; /* İç boşluk */
+    border-radius: 5px; /* Köşe yuvarlaklığı */
+    transition: background-color 0.3s; 
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color:whitesmoke;
+  }
+  
+  /* Dropdown butonu ve linkleri için ek stil */
+  .dropbtn {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .dropbtn:hover{
+    background-color: orange;
+  }
+  
+  .dropdown-content a:hover {background-color: orange;}
+  
+  /* Ürünler butonu ve açılır menü arasındaki boşluğu kaldırmak için */
+  .dropbtn, .dropdown-content {
+    margin: 0;
+    border: 0;
+  }
+
+  .main-image{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+  }
+
+  .content{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .baslik{
+    font-size: larger;
+    margin-left: 100px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center; /* Yatay hizalama */
+    max-width: 800px; /* Konteynerin maksimum genişliği */
+    margin: 0 auto; /* Sayfanın ortalanması */
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    flex: 0 0 auto; /* Resim konteynerinin boyutunu sabit tutar */
+    margin-right: 20px; /* Resim ile metin arasındaki boşluk */
+}
+
+.image-container img {
+    width: 200px; /* Resmin genişliği */
+    height: 300px; /* Resmin yüksekliği */
+}
+
+.text-container {
+    flex: 1; /* Metin konteynerinin boyutunu esnek hale getirir */
+}
+
+.text-container h2 {
+    margin-top: 0; /* Başlık ile üst kenar arasındaki boşluk */
+}
+
+.text-container p {
+    margin-bottom: 0; /* Metin ile alt kenar arasındaki boşluk */
+}
+
+.custom-button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: center; /* Dikeyde ortalamak için */
+    margin-top: 10px; /* İstediğiniz boşluk için */
+    text-decoration: none;
+}
+
+
+.custom-button:hover {
+    background-color: white;
+    color: orange;
+    text-decoration: none;
+}
+
+.custom-button:active {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+button[type="submit"] {
+    background-color: whitesmoke;
+    color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+}
+
+
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+  color: orange;
+  text-align: center;
+}
+.form-container form {
+  margin-top: 20px;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-container input[type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+  background-color: #ff7f00;
+}
+
+
+
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+  color: orange;
+  text-align: center;
+}
+.form-container form {
+  margin-top: 20px;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-container textarea {
+  resize: vertical;
+  height: 100px;
+}
+.form-container input[type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+  background-color: #ff7f00;
+}
+
+
+/*giris*/
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+  color: orange;
+  text-align: center;
+}
+.form-container form {
+  margin-top: 20px;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-container input[type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+  background-color: #ff7f00;
+}
